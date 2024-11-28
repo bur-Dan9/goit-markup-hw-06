@@ -313,13 +313,18 @@ header {
         padding: 72px 0;
         max-width: 768px;
         margin: 0 auto;
+        min-resolution.
 }
 @media only screen and (min-width:768px) {
     .first {
         padding: 112px 0;
     }
 }
-
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .first {
+            background-image: url('../images/people-office X2.jpg');
+        }
+    }
 @media only screen and (min-width:1158px) {
     .first {
         max-width: 1440px;
