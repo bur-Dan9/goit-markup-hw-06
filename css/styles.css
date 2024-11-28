@@ -321,8 +321,10 @@ header {
     }
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .first {
-            background-image: url('../images/people-office X2.jpg');
+    .first {background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+                background-image: url('../images/people-office X2.jpg');
         }
     }
 @media only screen and (min-width:1158px) {
