@@ -1115,3 +1115,27 @@ label {
     border-radius: 4px;
     margin: 0 auto;
 }
+.form-label-sendbtn.animate {
+    animation: moveButton 3s linear infinite;
+}
+@keyframes moveButton {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(450px, -250px);
+    }
+
+    50% {
+        transform: translate(0, -500px);
+    }
+
+    75% {
+        transform: translate(-100px, -450px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
