@@ -4,4 +4,3 @@ const button = document.querySelector('.form-label-sendbtn');
 button.addEventListener('mouseenter', () => {
   button.classList.add('animate');  // Добавляем класс для анимации
 });
-
