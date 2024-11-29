@@ -39,7 +39,7 @@
             >Web<span class="logo-studio">Studio</span></a
           >
 
-          <button type="button" class="hedder-burger">
+          <button type="button" class="hedder-burger" data-heder-open>
             <svg class="burger-svg" width="24" height="24">
               <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
             </svg>
@@ -77,8 +77,8 @@
           </ul>
         </address>
       </div>
-      <div class="mobail-menu">
-        <button type="button" class="mobail-btn-x">
+      <div class="mobail-menu" data-heder>
+        <button type="button" class="mobail-btn-x" data-heder-close>
           <svg class="mobail-btn-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
           </svg>
@@ -148,13 +148,16 @@
           </li>
         </ul>
       </div>
+      <script src="./js/heder.js"></script>
     </header>
     <main>
       <section class="first">
         <div class="container first-container">
           <h1 class="first-name">Effective Solutions for Your Business</h1>
 
-          <button class="first-btn" type="button">Order Service</button>
+          <button class="first-btn" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <section class="advantages-section">
@@ -690,9 +693,9 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay">
+    <div class="modal-overlay" data-modal>
       <div class="modal">
-        <button class="modal-btn" type="button">
+        <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-btn-x" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
           </svg>
@@ -776,5 +779,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
