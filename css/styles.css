@@ -322,9 +322,9 @@ header {
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .first {background-image: linear-gradient(to bottom,
-                rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-                background-image: url('../images/people-office X2.jpg');
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url('../images/people-office\ X2.jpg');
         }
     }
 @media only screen and (min-width:1158px) {
@@ -417,6 +417,7 @@ header {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 24px;
+        row-gap: 72px;
     }
 }
 
@@ -729,6 +730,7 @@ margin-bottom: 8px;
     display: flex;
     flex-direction: column;
     align-items: baseline;
+    justify-content: center;
 }
 @media only screen and (min-width:768px) {
     .footer-container {
@@ -791,7 +793,7 @@ margin-bottom: 8px;
 }
 @media only screen and (min-width:768px) {
     .footer-social {
-    margin-bottom: 0;
+    margin: 0;
     }
 }
 @media only screen and (min-width:1158px) {
@@ -884,6 +886,8 @@ flex-direction: column;
     color: #ffffff;
 }
 .footer-subscribe-btn {
+    margin: 0 auto;
+    padding: 8px 24px;
     min-width: 165px;
     height: 40px;
     display: flex;
@@ -899,6 +903,7 @@ flex-direction: column;
     background-color: #4D5AE5;
     border: none;
     border-radius: 4px;
+
 }
 .footer-subscribe-svg {
     margin-left: 16px;
@@ -918,7 +923,7 @@ opacity: 0;
 pointer-events: none;
 }
 
-.modal-overla.is-open {
+.modal-overlay.is-open {
     opacity: 1;
     pointer-events: auto;
 }
